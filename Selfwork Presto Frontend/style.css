@@ -1,0 +1,302 @@
+*{
+    font-family: "Sarabun", sans-serif;
+    
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    font-family: "Londrina Solid", sans-serif;
+    
+}
+
+:root {
+    --beige: rgb(245, 245, 220);  
+    --marrone: rgb(75, 56, 40); 
+    --rosso: rgb(178, 34, 34); 
+}
+
+body{
+    background-color: var(--marrone);
+    color: var(--beige);
+}
+
+.bg-beige{
+    background-color: var(--beige);
+}
+
+.bg-marrone{
+    background-color: var(--marrone);
+}
+
+.bg-rosso{
+    background-color: var(--rosso);
+}
+
+.text-beige{
+    color: var(--beige);
+}
+
+.text-marrone{
+    color: var(--marrone);
+}
+
+.text-rosso{
+    color: var(--rosso);
+}
+
+
+/*Navbar*/
+.navbar{
+    height: 180px;
+    transition: 0.5s;
+
+}
+
+.nav-link{
+    color: var(--beige);
+    font-weight: 700px;
+}
+
+.nav-link:hover{
+    color: var(--rosso) !important;
+    text-shadow: 5px 5px 10px var(--rosso), -5px -5px 10px var(--rosso);
+
+    
+}
+
+.logo{
+    width: 50px;
+    transition: 0.5s;
+    scale: 1;
+}
+
+#collapse{
+    transition: 0.5s;
+}
+
+#menuCascata{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/*Header*/
+.header{
+    background-image: linear-gradient(rgba(75, 56, 40) 20%, rgba(75, 56, 40, 0), rgba(75, 56, 40)), url(https://birdmenmagazine.com/wp-content/uploads/2019/06/game-of-thrones-red-keep-cr-hbo2.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.btn-custom{
+    color: var(--marrone);
+    background-color: var(--beige);
+    border: 2px solid var(--marrone);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 15px 25px;
+    transition: 0.5s;
+
+}
+
+.btn-custom:hover{
+    color: var(--beige);
+    background-color: var(--marrone);
+    border: 2px solid var(--beige);
+    border-radius: 50px;
+    transform: scale(1.2)
+}
+
+/*Positioned*/
+
+.positioned{
+    position: relative;
+    top: -150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--beige);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--beige);
+    border-radius: 20px;
+}
+
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--beige);
+    color: var(--marrone);
+    border: 2px solid var(--marrone);
+}
+
+@media screen and(max-width: 600px){
+    .positioned{
+        position: static;
+    }
+
+} 
+
+/*Numeri Incrementali*/
+
+.number{
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+/* Swiper */
+.swiper{
+    height: 600px;
+}
+
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--beige);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*PAGINA ANNUNCI*/
+
+.accordion-item, .accordion-button{
+    background-color: var(--marrone);
+    color: var(--beige);
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--beige);
+    background-color: var(--marrone);
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:hover{
+    color: var(--rosso) !important;
+    text-shadow: 5px 5px 10px var(--rosso), -5px -5px 10px var(--rosso);
+
+    
+}
+
+.card-custom{
+    
+    width: 30%;
+    border: 2px solid var(--beige);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.img-card{
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+
+}
+
+/*CHI SIAMO*/
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+.opener{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--marrone);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.vh-75{
+    height: 75vh;
+}
+
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--beige);
+    background-color: red;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.flip-card{
+    height: 500px;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--beige);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.inner-face{
+    height: 100%;
+    width: 100%;
+    background-image: url(./media/logoBeigeFlip.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.inner-back{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+}
